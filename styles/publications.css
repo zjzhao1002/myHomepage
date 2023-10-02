@@ -1,0 +1,7 @@
+.publications-entry {
+    font-family: 'Times New Roman', Times, serif;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    font-size: 20px;
+    row-gap: 0px;
+}

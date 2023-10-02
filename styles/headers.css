@@ -1,0 +1,51 @@
+.basic-info {
+    display: flex;
+}
+
+.left-section {
+    display: flex;
+}
+
+.profile-picture {
+    height: 400px;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.myname {
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 55px;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.icons {
+    height: 30px;
+    width: 35px;
+    margin-right: 5px;
+}
+
+.circle-icons {
+    height: 35px;
+    width: 35px;
+    margin-right: 5px;
+}
+
+.other-links {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin-top: 55px;
+}
