@@ -1,0 +1,104 @@
+.hero {
+  display: grid;
+  grid-template-columns: minmax(220px, 320px) minmax(0, 1fr);
+  gap: 56px;
+  align-items: start;
+}
+
+.profile-panel {
+  position: sticky;
+  top: 92px;
+}
+
+.profile-picture {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  object-fit: cover;
+}
+
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.profile-links a {
+  align-items: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--accent-dark);
+  display: inline-flex;
+  height: 44px;
+  justify-content: center;
+  transition: background 160ms ease, border-color 160ms ease, color 160ms ease, transform 160ms ease;
+  width: 44px;
+}
+
+.profile-links a:hover,
+.profile-links a:focus-visible {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #ffffff;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.profile-links svg {
+  fill: none;
+  height: 22px;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+  width: 22px;
+}
+
+.hero-copy {
+  padding-top: 16px;
+}
+
+.hero-copy .lead {
+  color: var(--text);
+  font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+  line-height: 1.55;
+  max-width: 760px;
+}
+
+.about-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-top: 32px;
+  padding: 28px;
+}
+
+.about-card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 14px;
+}
+
+.about-card p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 860px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .profile-panel {
+    position: static;
+    max-width: 360px;
+  }
+
+  .hero-copy {
+    padding-top: 0;
+  }
+}

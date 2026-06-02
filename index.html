@@ -1,97 +1,141 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Personal Homepage of Zhijie Zhao">
+    <meta name="description" content="Personal homepage and portfolio of Dr. Zhijie Zhao">
     <meta name="author" content="Zhijie Zhao">
-    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="styles/headers.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/general.css">
-
-    <title>Dr. Zhijie Zhao</title>
+    <link rel="stylesheet" href="styles/home.css">
+    <title>Dr. Zhijie Zhao | Portfolio</title>
   </head>
   <body>
-    <div class="basic-info">
-      <div class="left-section">
-        <img class="profile-picture" src="img/8991.JPG">
-      </div>
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="brand" href="index.html">Zhijie Zhao</a>
+        <div class="nav-links">
+          <a class="active" href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="publications.html">Publications</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
 
-      <div class="middle-section">
-        <div class="myname">
-          <b>Dr. Zhijie Zhao</b>
-        </div>
-        <div class="about-me">
-          <p><b>About Me: </b></p>
-          <p>
-            I am a particle physcisist. My researches include many aspects: 
-            Monte-Carlo event generators, effective field theory, collider physics, and physics beyond the standard models. 
-            More details of my researches can be found in my publications. 
-          </p>
-          <p>
-            Most of my works are theoretical studies and numerical simulations, 
-            so I develops my skills on programming. 
-            The most useful languages are C++, Fortran, and Python.
-          </p>
-          <p>
-            I am also interested in Machine Learning and Artificial Intelligence.
-            These technologies have been widely used in researches of particle physics. 
-            I want to master them.
-          </p>
-        </div>
-      </div>
+    <main class="page-shell">
+      <section class="hero">
+        <aside class="profile-panel" aria-label="Profile links">
+          <img class="profile-picture" src="img/profile.jpg" alt="Portrait of Dr. Zhijie Zhao">
+          <div class="profile-links">
+            <a href="mailto:zjzhao1002@gmail.com" aria-label="Email" title="Email">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"></path>
+                <path d="m22 7-10 6L2 7"></path>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/zhijie-zhao-6841b1269/" target="_blank" rel="noopener me" aria-label="LinkedIn" title="LinkedIn">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6Z"></path>
+                <path d="M2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://github.com/zjzhao1002" target="_blank" rel="noopener me" aria-label="GitHub" title="GitHub">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M9 19c-5 1.5-5-2.5-7-3"></path>
+                <path d="M15 22v-3.9a3.4 3.4 0 0 0-1-2.6c3.1-.3 6.5-1.5 6.5-7A5.4 5.4 0 0 0 19 4.8 5 5 0 0 0 18.9 1S17.7.6 15 2.5a13.4 13.4 0 0 0-6 0C6.3.6 5.1 1 5.1 1A5 5 0 0 0 5 4.8a5.4 5.4 0 0 0-1.5 3.8c0 5.4 3.3 6.6 6.5 7a3.4 3.4 0 0 0-1 2.6V22"></path>
+              </svg>
+            </a>
+            <a href="https://www.kaggle.com/zjzhao1002" target="_blank" rel="noopener me" aria-label="Kaggle" title="Kaggle">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M7 3v18"></path>
+                <path d="M17 6 8 12l9 6"></path>
+                <path d="m12 10 6-7"></path>
+                <path d="m12 14 6 7"></path>
+              </svg>
+            </a>
+            <a href="https://leetcode.com/u/zjzhao1002/" target="_blank" rel="noopener me" aria-label="LeetCode" title="LeetCode">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="m14 4-8 8 8 8"></path>
+                <path d="m10 12 10 0"></path>
+                <path d="m17 7 3 3"></path>
+              </svg>
+            </a>
+            <a href="https://www.upwork.com/freelancers/~011e5b8226c992b44c" target="_blank" rel="noopener me" aria-label="Upwork" title="Upwork">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M4 7v6a4 4 0 0 0 8 0V7"></path>
+                <path d="M12 13c1.2-3 2.7-5 5-5a3 3 0 0 1 0 6c-2.3 0-3.8-2-5-5"></path>
+                <path d="M12 13v8"></path>
+              </svg>
+            </a>
+          </div>
+        </aside>
 
-      <div class="right-section">
-        <div class="contact-info">
-          <img class="icons" src="img/icons8-neuer-beitrag-50.png">
-          <a href="mailto:zjzhao1002@gmail.com">zjzhao1002@gmail.com</a>
+        <div class="hero-copy">
+          <p class="eyebrow">Particle Physicist · Scientific Computing · AI Automation</p>
+          <h1>Dr. Zhijie Zhao</h1>
+          <p class="lead">
+            I build computational tools for high-energy physics, from Monte Carlo event-generator studies
+            to AI-assisted research workflows and automated data analysis.
+          </p>
+          <div class="about-card">
+            <h2>About Me</h2>
+            <p>
+              I am a particle physicist working across Monte Carlo event generators, effective field theory,
+              collider physics, and physics beyond the Standard Model.
+            </p>
+            <p>
+              My research combines theoretical studies with numerical simulation, which has shaped my
+              programming work in C++, Fortran, Python, automation, and data-focused tooling.
+            </p>
+            <p>
+              I am also interested in machine learning and artificial intelligence, especially where these
+              methods can accelerate research discovery and analysis in particle physics.
+            </p>
+          </div>
         </div>
-        <div class="contact-info">
-          <img class="icons" src="img/LI-In-Bug.png">
-          <a href="https://www.linkedin.com/in/zhijie-zhao-6841b1269/" target="_blank">LinkeIn profile</a>
+      </section>
+
+      <section class="content-section" aria-labelledby="experience-heading">
+        <h2 id="experience-heading">Working Experience</h2>
+        <div class="timeline">
+          <article class="timeline-item">
+            <p class="timeline-date">2025-present</p>
+            <h3>Junior at Henan Normal University, Xinxiang</h3>
+            <p>Implementation of machine learning and AI in particle physics research.</p>
+          </article>
+          <article class="timeline-item">
+            <p class="timeline-date">2021-2023</p>
+            <h3>Postdoctoral Fellow at DESY, Hamburg</h3>
+            <p>Tuning Monte Carlo generators for precision collider studies.</p>
+          </article>
+          <article class="timeline-item">
+            <p class="timeline-date">2019-2023</p>
+            <h3>Postdoctoral Fellow at Institute of High Energy Physics, Beijing</h3>
+            <p>Monte Carlo simulation and analysis of processes at future colliders.</p>
+          </article>
         </div>
-        <div class="contact-info">
-          <img class="circle-icons" src="img/github-mark.png">
-          <a href="https://github.com/zjzhao1002" target="_blank">GitHub profile</a>
+      </section>
+
+      <section class="content-section" aria-labelledby="education-heading">
+        <h2 id="education-heading">University Education</h2>
+        <div class="timeline">
+          <article class="timeline-item">
+            <p class="timeline-date">2015-2019</p>
+            <h3>PhD in Theoretical Particle Physics, University of Siegen</h3>
+            <p>PhD Thesis: Multi-Higgs Production at Future Hadron Colliders.</p>
+          </article>
+          <article class="timeline-item">
+            <p class="timeline-date">2012-2015</p>
+            <h3>MSc in Atomic and Molecular Physics, University of Chinese Academy of Sciences</h3>
+            <p>Master Thesis: Theoretical Research for The Propagation of Intense Femtosecond Laser in Air.</p>
+          </article>
+          <article class="timeline-item">
+            <p class="timeline-date">2007-2011</p>
+            <h3>BSc in Opto-Information Science &amp; Technology, South China Agricultural University</h3>
+          </article>
         </div>
-        <div class="other-links">
-          <div>Links to: </div>
-          <ul style="margin-top: 10px;">
-            <li style="font-size: 25px;"><a href="files/cv.pdf">Curriculum Vitae</a></li>
-            <li style="font-size: 25px;"><a href="publications.html">Publications List</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <hr>
-    <div>
-        <h2><b>Working Experience</b></h2>
-        <ul>
-          <li>
-            <div>Postdoctoral Fellow at DESY, Hamburg (2021-present).<div>
-            <div>Main task: Tuning for Monte-Carlo generators.</div>
-          </li>
-          <li>
-            <div>Postdoctoral Fellow at Institute of High Energy Physics, Beijing (2019-present).<div>
-            <div>Main task: Monte-Carlo simulation and analysis of processes at future colliders.</div>
-          </li>
-        </ul>
-        <h2><b>University Education</b></h2>
-        <ul>
-          <li>
-            <div>PhD of theoretical particle physics at University of Siegen (2015-2019).<div>
-            <div>PhD Thesis: Multi-Higgs Production at Future Hadron Colliders.</div>
-            <div>Supervisor: Wolfgang Kilian.</div>
-          </li>
-          <li>
-            <div>Msc of Atomic and Molecular Physics at University of Chinese Academy of Sciences, Beijing (2012-2015).<div>
-            <div>Master Thesis: Theoretical Research for The Propagation of Intense Femtosecond Laser in Air.</div>
-            <div>Supervisor: Tingting Xi.</div>
-          </li>
-          <li>
-            <div>BSc of Opto-Information Science &#38; Technology at South China Agricultural University, Guangzhou  (2007-2011).<div>
-          </li>
-        </ul>
-    </div>
+      </section>
+    </main>
   </body>
 </html>

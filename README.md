@@ -1,2 +1,2 @@
 # myHomepage
-This is my first homepage. It is just a website to pratice HTML and CSS.
+This is my porfolio. It is just a plain static website built by HTML and CSS.
